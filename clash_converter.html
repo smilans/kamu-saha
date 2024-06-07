@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clash Converter</title>
+    <link rel="stylesheet" href="dist/css/styles-page4.css">
+</head>
+
+<body>
+
+    <div class="parallax">
+        <video autoplay muted loop>
+            <source src="image/video/video1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <h1>Clash Converter</h1>
+        <label for="urls">Masukkan URL (satu per baris)</label>
+        <textarea id="urls" placeholder="Masukkan URL VMess/VLESS/Trojan, satu per baris"></textarea>
+        <button onclick="convertURLs()">Convert</button>
+        <label for="filename">Masukkan Nama File</label>
+        <input type="text" id="filename" placeholder="Masukkan Nama File">
+        <button onclick="downloadConfig()">Unduh</button>
+        <div id="result"></div>
+        <button id="copyButton" class="copy-button" style="display: none;" onclick="copyResult()">Salin Hasil</button>
+    </div>
+
+    <script src="dist/js/script.js"></script>
+
+</body>
+
+</html>

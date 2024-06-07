@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Kuota</title>
+    <link rel="stylesheet" href="dist/css/styles-page3.css">
+</head>
+<body>
+
+<div class="parallax">
+    <video autoplay muted loop>
+        <source src="image/video/video1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
+
+<div class="form-container">
+    <h2>Cek Kuota</h2>
+    <input type="text" id="msisdn" placeholder="Masukkan MSISDN">
+    <button onclick="cekKuota()">Cek Kuota</button>
+    <div id="result"></div>
+    <button id="copyButton" class="copy-button" style="display: none;" onclick="copyResult()">Salin Hasil</button>
+</div>
+
+<script src="dist/js/script.js"></script>
+
+</body>
+</html>
